@@ -13,8 +13,8 @@ repository cardano-haskell-packages
 -- See CONTRIBUTING for information about these, including some Nix commands
 -- you need to run if you change them
 index-state:
-  , hackage.haskell.org 2024-01-23T08:19:39Z
-  , cardano-haskell-packages 2024-01-25T13:05:04Z
+  , hackage.haskell.org 2024-01-30T07:06:36Z
+  , cardano-haskell-packages 2024-01-30T07:58:01Z
 
 packages:
   cardano-cli
@@ -44,3 +44,8 @@ write-ghc-environment-files: always
 -- Do NOT add more source-repository-package stanzas here unless they are strictly
 -- temporary! Please read the section in CONTRIBUTING about updating dependencies.
 
+source-repository-package
+    type: git
+    location: https://github.com/cardano-scaling/ouroboros-network
+    tag: 000253f95ff0884c3754dc3deff074acd5cc5c56
+    subdir: network-mux
